@@ -1,6 +1,6 @@
 public class Assignment01Q03 {
     public static void main(String[] args) {
-        int x = Integer.parseInt(args[0])
+        int x = Integer.parseInt(args[0]);
         System.out.println("The first " + x + " Fibonacci numbers are:");
 
         ////////////////////////////////////////////////////////////////
@@ -13,7 +13,8 @@ public class Assignment01Q03 {
         int prev1 = 1;
         for (int i = 0; i < x; i++) {
             if (i < 2) {
-                System.out.println(1);
+                System.out.print(1);
+                numOdd++;
             } else {
                 int newTerm = prev2 + prev1;
                 numOdd += (newTerm % 2);
